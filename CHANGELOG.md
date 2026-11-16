@@ -1,6 +1,10 @@
 # Changelog
 
 Each entry is one version of this template. Breaking changes are listed first.
+## 1.40.5-1 (2026-11-16)
+
+- README: Deploy on Railway button for the published template `weaviate-2`. No change to the deployed service.
+
 
 ## 1.40.5 (2026-11-16)
 
