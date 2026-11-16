@@ -10,7 +10,7 @@ One service, **Weaviate**, built from this repo:
 - gRPC API on port `50051`, reachable from your other Railway services over the private network: `${{Weaviate.RAILWAY_PRIVATE_DOMAIN}}:50051`.
 - A volume at `/var/lib/weaviate` holding collections, the schema and filesystem backups (`/var/lib/weaviate/backups`).
 - An API key, generated at deploy time. Anonymous access is off, so every request except the health endpoints needs `Authorization: Bearer <key>`. The key belongs to the user `admin`, the RBAC root user. The container refuses to start without a key.
-- Health check on `/v1/.well-known/ready`.
+- Railway health check on `/v1` (answers without a key once the API is up). Railway doesn't accept `.` or `-` in a health check path, so Weaviate's own `/v1/.well-known/ready` can't be used there; it still works for your own monitoring.
 
 ## Variables
 
