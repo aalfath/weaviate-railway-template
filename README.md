@@ -1,3 +1,5 @@
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/weaviate-2?utm_medium=integration&utm_source=button&utm_campaign=weaviate)
+
 # Weaviate on Railway
 
 One-click [Weaviate](https://weaviate.io) vector database for Railway, built from the official image `semitechnologies/weaviate:1.40.5` (pinned by digest in the [`Dockerfile`](Dockerfile)).
